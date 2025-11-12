@@ -7,6 +7,9 @@ def load_data(data_file, train_idx_file, test_idx_file):
         X_train, Y_train, X_test, Y_test
     """
 
+    print("Load files:")
+    print(f"\t{data_file}\n\t{train_idx_file}\n\t{test_idx_file}")
+
     # Load data
     def conv(item):
         return item.split(":")[1] if ":" in item else item
