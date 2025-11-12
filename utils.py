@@ -20,8 +20,6 @@ def load_data(data_file, train_idx_file, test_idx_file):
     
     X_train, Y_train = data[train_idx, 1:], data[train_idx, 0]
     X_test, Y_test = data[test_idx, 1:], data[test_idx, 0]
-
-    # Reassign value for classes:
     
     print(f"\nX_train shape: {X_train.shape}, Y_train shape: {Y_train.shape}")
     print(f"X_test shape: {X_test.shape}, Y_train shape: {Y_test.shape}\n")
